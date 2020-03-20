@@ -1,17 +1,20 @@
 import argparse
 
-parser = argparse.ArgumentParser(description="calculate X to the power of Y")
-group = parser.add_mutually_exclusive_group()
-group.add_argument("-v", "--verbose", action="store_true")
-group.add_argument("-q", "--quiet", action="store_true")
-parser.add_argument("x", type=int, help="the base")
-parser.add_argument("y", type=int, help="the exponent")
+parser = argparse.ArgumentParser(description="add notes to PostgreSQL database")
+# group = parser.add_mutually_exclusive_group()
+# group.add_argument("-v", "--verbose", action="store_true")
+# group.add_argument("-q", "--quiet", action="store_true")
+parser.add_argument("action", help="what action you'd like to take", choices=['list','create'],default='list',)
 args = parser.parse_args()
-answer = args.x**args.y
 
-if args.quiet:
-    print(answer)
-elif args.verbose:
-    print("{} to the power {} equals {}".format(args.x, args.y, answer))
-else:
-    print("{}^{} == {}".format(args.x, args.y, answer))
+user_action = args.action
+
+if user_action=='list':
+    print("now showing: your notes!")
+elif user_action=='create':
+    title = input('Please provide the title of your new note: ')
+    content = input('Please provide the content: ')
+    print(f"""Note saved! 
+Title: {title}
+Content: {content}    
+    """)
