@@ -24,13 +24,25 @@ user_action = args.action
 
 if user_action=='list':
     note_list = Note.select()
+    print()
     if args.quiet:
         for single_note in list(note_list):
-            print(single_note.title," ",single_note.date)
+            print(single_note.title," ",single_note.date,"\n")
+        search_title = input('Would you like to view a single note? \nPlease type the title here, or hit enter to exit: ')
+        if search_title != "":
+            single_note = Note.get(Note.title == search_title)
+            print(f"""
+    {single_note.title} {single_note.date}
+        {single_note.content}
+    """)
+
+
     else:
         for single_note in list(note_list):
-            print(f"""{single_note.title} {single_note.date}
-    {single_note.content}""")
+            print(f"""
+{single_note.title} {single_note.date}
+    {single_note.content}
+""")
 elif user_action=='create':
     title = input('Please provide the title of your new note: ')
     content = input('Please provide the content: ')
