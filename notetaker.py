@@ -23,14 +23,11 @@ args = parser.parse_args()
 user_action = args.action
 
 if user_action=='list':
-    print("now showing: your notes!")
     note_list = Note.select()
     if args.quiet:
-        print('the short list')
         for single_note in list(note_list):
             print(single_note.title," ",single_note.date)
     else:
-        print('the long list')
         for single_note in list(note_list):
             print(f"""{single_note.title} {single_note.date}
     {single_note.content}""")
