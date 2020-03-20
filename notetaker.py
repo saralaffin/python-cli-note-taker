@@ -32,7 +32,8 @@ if user_action=='list':
     else:
         print('the long list')
         for single_note in list(note_list):
-            print(single_note.title," ",single_note.date)
+            print(f"""{single_note.title} {single_note.date}
+    {single_note.content}""")
 elif user_action=='create':
     title = input('Please provide the title of your new note: ')
     content = input('Please provide the content: ')
