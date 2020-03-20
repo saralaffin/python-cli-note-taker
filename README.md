@@ -2,11 +2,12 @@
 
 Project 9 in General Assembly SEI35
 
-To try out my note taker: 
-1. Make sure you have Python3, pipenv, and SQL installed!
+To try out my note taker:
+
+1. Make sure you have Python3, pipenv, and PostgreSQL installed!
 1. Clone down this repo
 1. In the project folder, run `pipenv install`
-1. Might need to fire up the SQL db... 
+1. In `notetaker.py`, update your PostgreSQL settings.
 1. Then: `pipenv run python3 notetaker.py -h`
 
 The project requirements provied by GA are summarized below:
