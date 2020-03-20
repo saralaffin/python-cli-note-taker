@@ -1,6 +1,6 @@
 # python-cli-note-taker
 
-Project 8 in General Assembly SEI35
+Project 9 in General Assembly SEI35
 
 To try out my note taker: 
 1. Make sure you have Python3, pipenv, and SQL installed!
