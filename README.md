@@ -33,4 +33,4 @@ The RESTful routes available include:
 
 POST and GET at `/notes/`
 
-POST, GET, PUT, and DELETE at `/notes/<id>` where `<id>` corresponds to your local database's id number.
+POST, GET, PUT, and DELETE at `/notes/<id>` where `<id>` corresponds to your local database's id numbers.
