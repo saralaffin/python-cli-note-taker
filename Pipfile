@@ -9,6 +9,8 @@ verify_ssl = true
 psycopg2-binary = "*"
 peewee = "*"
 requests = "*"
+pandas = "*"
+flask = "*"
 
 [requires]
 python_version = "3.6"

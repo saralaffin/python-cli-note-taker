@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/home/sara/.local/share/virtualenvs/python-cli-note-taker-N0QZfegJ/bin/python"
+    "python.pythonPath": "/home/sara/.local/share/virtualenvs/python-cli-note-taker-N0QZfegJ/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
