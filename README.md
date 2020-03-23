@@ -24,3 +24,13 @@ To learn Python and SQL, you'll be building a command line application!
 ### Note Taker
 
 Users sould be able to create notes with titles and contents. They should be able to see a list of their notes and select and view a specific note.
+
+# Also in this repo: an API built using Python, SQL, and Flask
+
+To host this API on your local machine, run `pipenv run python3 noteAPI.py`.
+
+The RESTful routes available include:
+
+POST and GET at `/notes/`
+
+POST, GET, PUT, and DELETE at `/notes/<id>` where `<id>` coreesponds to your local database's id number.
