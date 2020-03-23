@@ -23,7 +23,7 @@ To learn Python and SQL, you'll be building a command line application!
 
 ### Note Taker
 
-Users sould be able to create notes with titles and contents. They should be able to see a list of their notes and select and view a specific note.
+Users should be able to create notes with titles and contents. They should be able to see a list of their notes and select and view a specific note.
 
 # Also in this repo: an API built using Python, SQL, and Flask
 
