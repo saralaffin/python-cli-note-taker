@@ -10,7 +10,7 @@ To try out my note taker:
 1. In `notetaker.py`, update your PostgreSQL settings. You may need to add a 'notes' database on your local machine.
 1. Then: `pipenv run python3 notetaker.py -h`
 
-The project requirements provied by GA are summarized below:
+The project requirements provided by GA are summarized below:
 
 # Python Command Line Application
 
@@ -33,4 +33,4 @@ The RESTful routes available include:
 
 POST and GET at `/notes/`
 
-POST, GET, PUT, and DELETE at `/notes/<id>` where `<id>` coreesponds to your local database's id number.
+POST, GET, PUT, and DELETE at `/notes/<id>` where `<id>` corresponds to your local database's id number.
